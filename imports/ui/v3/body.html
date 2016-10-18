@@ -1,0 +1,18 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Chat Messages</h1>
+    </header>
+
+    <ul>
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </ul>
+    <input type="text" id="textBox">
+  </div>
+</body>
+
+<template name="message">
+  <li>{{text}}</li>
+</template>
